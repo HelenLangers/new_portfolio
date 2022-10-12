@@ -1,5 +1,38 @@
 .main-view {
     display: flex;
-    background-color: #EAF3E4;
     height: 100vh;
 }
+
+.left-side {
+    display: flex;
+    
+}
+
+.animated-writing {
+    font-size: 1rem;
+    margin: 2rem 6rem;
+    color: #731919;
+    width: 40%;
+    height: fit-content;
+}
+
+.right-side {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.profileimage {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 400px;
+    border-radius: 48px;
+}
+
+.blob {
+    position: relative;
+    width: 120%;
+    top: -60px;
+    left: -110px;
+  }

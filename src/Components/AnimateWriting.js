@@ -1,13 +1,14 @@
 import React from 'react';
+import '../Styling/main.css';
 import { TypeAnimation } from 'react-type-animation';
 
 function AnimateWriting({writingSequence}) {
   return (
-    <div>
+    <div className='animated-writing'>
         <TypeAnimation sequence={writingSequence}
       speed={50}
       style={{ fontSize: '3em'}}
-      wrapper="h2"
+      wrapper="animated-writing"
       />
     </div>
   )

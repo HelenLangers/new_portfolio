@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vw-1000px) / 2);
-    z-index: 10;
+    z-index: 100;
 `
 
 export const NavLink = styled(Link)`
@@ -20,6 +20,7 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     margin-left: 1rem;
+    z-index: 100;
 
     &.active {
         color: #F2D4AE;
@@ -28,6 +29,8 @@ export const NavLink = styled(Link)`
 
 export const Image = styled.img`
     width: 12rem;
+    margin-top: 1rem;
+    z-index: 100;
 `
 
 export const Bars = styled(FaBars)`
@@ -53,4 +56,15 @@ export const NavMenu = styled.div`
     @media screen and (max-width: 768px) {
         display: none;
     }
+`
+
+export const Wave = styled.div`
+    margin-top: -20px;
+`
+
+export const WaveSVG = styled.svg`
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: -100px;
 `
