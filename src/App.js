@@ -1,4 +1,5 @@
-import NavBar from "./Components/NavBar";
+import { useState } from "react";
+import NavBar from "./Components/NavBar/NavBar";
 import { Routes, Route} from 'react-router-dom';
 import Homepage from "./Components/Homepage";
 import About from "./Components/About";
@@ -7,11 +8,21 @@ import Cycling from "./Components/Cycling";
 import Media from "./Components/Media";
 import RTWBlog from "./Components/RTWBlog";
 import LEJOGBlog from "./Components/LEJOGBlog";
+import Hamburger from "./Components/NavBar/Hamburger/Hamburger";
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+  
   return (
-    <div>
-    <NavBar/>
+
+    <>
+    <Hamburger toggle={toggle} isOpen={isOpen} />
+    <NavBar toggle = {toggle}/>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/about' element={<About/>}/>
@@ -24,7 +35,7 @@ function App() {
 
     
 
-    </div>
+    </>
   );
 }
 

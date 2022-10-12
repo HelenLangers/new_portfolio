@@ -1,8 +1,15 @@
 import React from 'react'
+import '../Styling/main.css';
+import AnimateWriting from './AnimateWriting';
 
 function Homepage() {
+
+  const writingSequence = []
+
   return (
-    <div>Homepage</div>
+    <div className='main-view'>
+    <AnimateWriting />
+    </div>
   )
 }
 
