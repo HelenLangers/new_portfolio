@@ -7,8 +7,8 @@ function AnimateWriting({writingSequence}) {
     <div className='animated-writing'>
         <TypeAnimation sequence={writingSequence}
       speed={50}
-      style={{ fontSize: '3em'}}
-      wrapper="animated-writing"
+      className="animated-writing"
+      cursor={true}
       />
     </div>
   )
