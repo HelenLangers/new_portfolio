@@ -28,9 +28,10 @@ export const NavLink = styled(Link)`
 `
 
 export const Image = styled.img`
-    width: 12rem;
-    margin-top: 1rem;
+    width: 16rem;
+    margin-top: 2rem;
     z-index: 100;
+    filter: brightness(0) invert(1);
 `
 
 export const Bars = styled(FaBars)`
@@ -58,13 +59,10 @@ export const NavMenu = styled.div`
     }
 `
 
-export const Wave = styled.div`
-    margin-top: -20px;
-`
-
 export const WaveSVG = styled.svg`
     position: relative;
     display: block;
     width: 100%;
-    margin-top: -100px;
+    ${'' /* margin-top: -100px; */}
 `
+

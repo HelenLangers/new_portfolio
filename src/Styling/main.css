@@ -1,23 +1,24 @@
 .main-view {
     display: flex;
-    height: 100vh;
+    padding-bottom: 2rem;
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 60%;
 }
 
 .animated-writing {
     font-size: 3.5rem;
-    margin: 3rem 8rem 3rem 3rem;
+    margin-left: 3rem;
     color: #731919;
     height: fit-content;
 }
 
 .contact-button-box {
-    margin: 1rem 6rem;
+    margin-left: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,12 +47,9 @@
 
 .language-boxes {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    margin-top: 1rem;
     margin-left: 6rem; 
-    margin-right: 1rem;
-    margin-bottom: 2rem;
 }
 
 .skill {
@@ -77,6 +75,8 @@
     top: 0;
     left: 0;
     margin-right: 9rem;
+    margin-top: -80px;
+    margin-bottom: 0;
     height: 500px;
     background-color: #7B5C6E;
 }
@@ -94,4 +94,4 @@
     width: 120%;
     top: -60px;
     left: -110px;
-  }
+}

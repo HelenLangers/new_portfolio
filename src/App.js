@@ -9,6 +9,8 @@ import Media from "./Components/Media";
 import RTWBlog from "./Components/RTWBlog";
 import LEJOGBlog from "./Components/LEJOGBlog";
 import Hamburger from "./Components/NavBar/Hamburger/Hamburger";
+import Footer from "./Components/Footer";
+import './Styling/index.css'
 
 function App() {
 
@@ -19,8 +21,7 @@ function App() {
   }
   
   return (
-
-    <>
+    <div>
     <Hamburger toggle={toggle} isOpen={isOpen} />
     <NavBar toggle = {toggle}/>
       <Routes>
@@ -32,10 +33,8 @@ function App() {
         <Route path='/cycling/LEJOG' element={<LEJOGBlog/>}/>
         <Route path='/media' element={<Media/>}/>
       </Routes>
-
-    
-
-    </>
+      <Footer/>
+    </div>
   );
 }
 

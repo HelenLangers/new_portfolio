@@ -1,0 +1,22 @@
+.FooterBar{  
+    padding: 12px;  
+    margin-top: 15px;
+    width: 100%;
+    height: 1.5rem;
+    background-color: #7B5C6E;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2rem;
+    margin: 5px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
