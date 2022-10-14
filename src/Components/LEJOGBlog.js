@@ -11,7 +11,7 @@ import AnimateWriting from './AnimateWriting';
 
 function LEJOGBlog () {
 
-  const writingSequence = ['Lands End to John O\'\Groats', 1000]
+  const writingSequence = ['Lands End to John O\'Groats', 1000]
 
 
   return (

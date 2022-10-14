@@ -19,7 +19,7 @@ function OneProject({project}) {
             </div>
             <p className='summary'>{project.summary}</p>
             <div className='button-box'>
-            <a className='button-link' href={project.github}>See it on Github</a>
+            <a className='button-link' href={project.github} target="_blank" rel="noopener noreferrer">See it on Github</a>
             </div>
         </div>
     </div>

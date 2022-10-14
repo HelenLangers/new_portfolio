@@ -6,7 +6,7 @@ import timeline from '../Assets/timeline.png';
 function About() {
 
   const writingSequence = [
-    'I\'\m changing career', 1000]
+    'I\'m changing career', 1000]
 
   return (
     <div className='main-view'>
@@ -20,7 +20,7 @@ function About() {
         </div>
       </div>
         <div className='right-side-about'>
-          <img className='timeline' src={timeline}/>
+          <img className='timeline' src={timeline} alt="my timeline up to now"/>
       </div>
     </div>
   )

@@ -5,8 +5,8 @@ import ProfileImage from '../Assets/profile-image-web.png';
 
 function Homepage() {
 
-  const writingSequence = ['Hi, I\'\m Helen', 1000,
-    'I\'\m a junior developer', 1000]
+  const writingSequence = ['Hi, I\'m Helen', 1000,
+    'I\'m a junior developer', 1000]
 
   return (
     <div className='main-view'>
@@ -14,7 +14,7 @@ function Homepage() {
         <AnimateWriting writingSequence={writingSequence}/>
         <div className='buttons-flex'>
         <div className='contact-button-box'>
-          <a className='contact-button-link' href="https://github.com/HelenLangers"><i class="devicon-github-original contact"></i>
+          <a className='contact-button-link' href="https://github.com/HelenLangers" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original contact"></i>
           <p className='skill-name'>Visit GitHub</p></a>
         </div>
         <div className='contact-button-box'>
@@ -59,7 +59,7 @@ function Homepage() {
       </div>
 
       <div className='right-side'>
-        <img className='profile-image' src={ProfileImage}/>
+        <img className='profile-image' src={ProfileImage} alt="Helen Langridge"/>
       </div>
     </div>
   )
