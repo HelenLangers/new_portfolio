@@ -1,13 +1,12 @@
 import React from 'react'
 import '../Styling/main.css';
 import AnimateWriting from './AnimateWriting';
-import Image from '../Assets/profileimage.jpg';
-import Blob from '../Assets/blob-haikei-1.svg';
+import ProfileImage from '../Assets/profile-image-web.png';
 import {Link} from 'react-router-dom';
 
 function Homepage() {
 
-  const writingSequence = [
+  const writingSequence = ['Hi, I\'\m Helen', 1000,
     'I am a junior developer', 1000]
 
   return (
@@ -56,8 +55,7 @@ function Homepage() {
 
 
       <div className='right-side'>
-        <img className='blob' src={Blob}/>
-        <img className='profileimage' src={Image}/>
+        <img className='profile-image' src={ProfileImage}/>
       </div>
     </div>
   )

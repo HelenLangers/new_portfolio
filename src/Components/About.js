@@ -8,7 +8,7 @@ import aboutBlob from '../Assets/about-blog.svg';
 function About() {
 
   const writingSequence = [
-    'I am a career changer', 1000]
+    'I am changing career', 1000]
 
   return (
     <div className='main-view'>

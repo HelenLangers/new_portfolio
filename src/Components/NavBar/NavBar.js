@@ -1,39 +1,39 @@
 import React from 'react'
 import HelenLogo from './HelenLogo.png';
-import {Nav, NavLink, Bars, NavMenu, Image, Wave, WaveSVG } from './NavBarElements';
+import {Nav, NavLink, Bars, NavMenu, Image, WaveSVG } from './NavBarElements';
 
 function NavBar({toggle}) {
     return (
         <>
             <Nav>
-                <NavLink to='/'>
+                <NavLink exact to='/'>
                     <Image src={HelenLogo}/>
                 </NavLink>
 
                 <Bars onClick={toggle}/>
 
                 <NavMenu>
-                    <NavLink to="/about"
+                    <NavLink exact to="/about"
                         activeStyle>
                         About
                     </NavLink>
 
-                    <NavLink to="/projects"
+                    <NavLink exact to="/projects"
                         activeStyle>
                         Projects
                     </NavLink>
 
-                    <NavLink to="/cycling"
+                    {/* <NavLink exact to="/cycling"
                         activeStyle>
                         Cycling
                     </NavLink>
 
-                    <NavLink to="/media"
+                    <NavLink exact to="/media"
                         activeStyle>
                         Media
-                    </NavLink>
+                    </NavLink> */}
 
-                    <NavLink to="/contact"
+                    <NavLink exact to="/contact"
                         activeStyle>
                         Contact
                     </NavLink>
@@ -46,7 +46,7 @@ function NavBar({toggle}) {
                 viewBox="0 0 1340 200"
                 preserveAspectRatio="none"
                 >
-            <path fill="#7B5C6E" fill-opacity="1" d="M0,128L1440,64L1440,0L0,0Z"></path></WaveSVG>
+            <path fill="#7B5C6E" fillOpacity="1" d="M0,128L1440,64L1440,0L0,0Z"></path></WaveSVG>
         </div>
         </>
     )
