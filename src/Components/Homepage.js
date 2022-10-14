@@ -55,7 +55,7 @@ function Homepage() {
 
 
       <div className='right-side'>
-        <img className='profile-image' src={ProfileImage}/>
+        <img src={ProfileImage}/>
       </div>
     </div>
   )

@@ -1,13 +1,21 @@
 .main-view {
     display: flex;
-    /* flex-wrap: wrap; */
     padding-bottom: 2rem;
+    margin-top: -110px;
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 60%;
+}
+
+.left-side-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 80px;
     width: 60%;
 }
 
@@ -76,10 +84,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40vw;
+}
+
+.right-side-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    margin-top: 80px;
 }
 
 .code-clan-about {
-    /* background-color: #731919; */
     margin-left: 6rem;
     margin-right: 7rem;
 }
@@ -88,51 +104,43 @@
     line-height: 1.5rem;
 }
 
-.timeline{
-    width: 300px;
-    position: absolute;
-    top: -30px;
-    left: 40px;
-    border-radius: 48px;
-}
-
-.righthand-side{
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-right: 9rem;
-    margin-top: -80px;
-    margin-bottom: 0;
-    height: 500px;
-    width: 400px;
-    background-color: #7B5C6E;
-}
-
-.about-blob {
-    position: relative;
-    width: 150%;
-    top: 0;
-    left: -80px;
+.timeline {
+    width: 100%;
+    margin-left: -20%;
 }
 
 @media screen and (max-width: 768px) {
     .main-view{
         flex-direction: column;
+        margin-top: 0;
     }
 
     .left-side{
         width: 100%;
-        height: 400px;
+        height: fit-content;
         align-items: center;
-        margin-left: 
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .left-side-about{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-top: 0;
     }
 
     .animated-writing{
         margin-left: 0;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
     .contact-button-box {
         margin-left: 0;
+        margin-bottom: 2rem;
     }
 
     .language-boxes {
@@ -143,5 +151,27 @@
 
     .skill {
         margin-bottom: 1rem;
+    }
+
+    .right-side{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 1rem;;
+    }
+
+    .right-side-about{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .timeline {
+        width: 80%;
+        margin-left: -5%;
     }
 }

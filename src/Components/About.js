@@ -1,9 +1,7 @@
 import React from 'react'
-import NavBar from './NavBar/NavBar';
 import '../Styling/main.css';
 import AnimateWriting from './AnimateWriting';
 import timeline from '../Assets/timeline.png';
-import aboutBlob from '../Assets/about-blog.svg';
 
 function About() {
 
@@ -12,7 +10,7 @@ function About() {
 
   return (
     <div className='main-view'>
-      <div className='left-side'>
+      <div className='left-side-about'>
         <AnimateWriting writingSequence={writingSequence}/>
         <div className='code-clan-about'>
         <p >Hi, I'm Helen and I'm a career changer into software development based near Edinburgh.</p>
@@ -21,8 +19,7 @@ function About() {
           <p>In July 2022, I started CodeClan's 16 week Professional Software Development bootcamp. This is an SQA accredited course which teaches the fundamentals of software development using Agile best practices, TDD and OOP. With over 800 hours of instructor-led and personal programming time, paired programming and practical projects, CodeClan gets driven career changes into the tech industry. But I didn't just learn how to code. Codeclan teaches growth mindset and encourages group work and a curiosity into the whys and the hows of programming.</p>
         </div>
       </div>
-        <div className='righthand-side'>
-          <img className='about-blob' src={aboutBlob}/>
+        <div className='right-side-about'>
           <img className='timeline' src={timeline}/>
       </div>
     </div>
