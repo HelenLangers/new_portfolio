@@ -37,7 +37,8 @@
 }
 
 .screenshot {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-style: solid;
     border-width: 3px;
     border-color: #395C36;
@@ -104,11 +105,15 @@
 
 @media screen and (max-width: 768px) {
     .projects-container{
-        margin-top: -35px;
+        margin-top: -5px;
     }
 
     .project-block{
         flex-direction: column;
+    }
+
+    .project-list{
+        margin-top: 0;
     }
 
     .image-half{
@@ -118,6 +123,10 @@
     .text-half{
         width: 100%;
         margin-top: 1rem;
+    }
+
+    .summary {
+        padding-left: 0;
     }
 
 }

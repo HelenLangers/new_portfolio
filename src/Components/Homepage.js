@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 function Homepage() {
 
   const writingSequence = ['Hi, I\'\m Helen', 1000,
-    'I am a junior developer', 1000]
+    'I\'\m a junior developer', 1000]
 
   return (
     <div className='main-view'>
@@ -52,10 +52,8 @@ function Homepage() {
         </div>
       </div>
 
-
-
       <div className='right-side'>
-        <img src={ProfileImage}/>
+        <img className='profile-image' src={ProfileImage}/>
       </div>
     </div>
   )

@@ -13,20 +13,17 @@ function Hamburger({toggle, isOpen}) {
                 Home
             </HamburgerLink>
             <HamburgerLink to="/about" onClick={toggle}>
-                About
+                About Me
             </HamburgerLink>
             <HamburgerLink to="/projects" onClick={toggle}>
                 Projects
             </HamburgerLink>
-            {/* <HamburgerLink to="/cycling" onClick={toggle}>
+            <HamburgerLink to="/cycling" onClick={toggle}>
                 Cycling
             </HamburgerLink>
-            <HamburgerLink to="/media" onClick={toggle}>
+            {/* <HamburgerLink to="/media" onClick={toggle}>
                 Media
             </HamburgerLink> */}
-            <HamburgerLink to="/contact" onClick={toggle}>
-                Contact
-            </HamburgerLink>
         </HamburgerMenu>
     </HamburgerWrapper>
     </HamburgerContainer>

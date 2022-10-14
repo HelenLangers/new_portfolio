@@ -15,7 +15,7 @@ function NavBar({toggle}) {
                 <NavMenu>
                     <NavLink exact to="/about"
                         activeStyle>
-                        About
+                        About Me
                     </NavLink>
 
                     <NavLink exact to="/projects"
@@ -23,20 +23,15 @@ function NavBar({toggle}) {
                         Projects
                     </NavLink>
 
-                    {/* <NavLink exact to="/cycling"
+                    <NavLink exact to="/cycling"
                         activeStyle>
                         Cycling
                     </NavLink>
-
+{/* 
                     <NavLink exact to="/media"
                         activeStyle>
                         Media
                     </NavLink> */}
-
-                    <NavLink exact to="/contact"
-                        activeStyle>
-                        Contact
-                    </NavLink>
                 </NavMenu>
             </Nav>
 

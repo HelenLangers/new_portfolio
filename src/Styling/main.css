@@ -9,6 +9,8 @@
     flex-direction: column;
     justify-content: space-around;
     width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .left-side-about {
@@ -95,6 +97,12 @@
     margin-top: 80px;
 }
 
+.profile-image {
+    margin-right: 2%;
+    max-width: 100%;
+    height: auto;
+}
+
 .code-clan-about {
     margin-left: 6rem;
     margin-right: 7rem;
@@ -105,8 +113,9 @@
 }
 
 .timeline {
-    width: 100%;
     margin-left: -20%;
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,7 +180,6 @@
     }
 
     .timeline {
-        width: 80%;
         margin-left: -5%;
     }
 }

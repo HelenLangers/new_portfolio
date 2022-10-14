@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styling/projects.css';
 
 function OneProject({project}) {
 

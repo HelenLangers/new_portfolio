@@ -6,7 +6,7 @@ import timeline from '../Assets/timeline.png';
 function About() {
 
   const writingSequence = [
-    'I am changing career', 1000]
+    'I\'\m changing career', 1000]
 
   return (
     <div className='main-view'>
