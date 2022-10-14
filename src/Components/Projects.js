@@ -53,7 +53,7 @@ function Projects() {
 
   const [projects, setProjects] = useState(sampleProjects)
 
-  const writingSequence = ['My Work', 1000]
+  const writingSequence = ['My Projects', 1000]
 
   return (
     <div className='projects-container'>
