@@ -27,8 +27,8 @@ function NavBar({toggle}) {
                         activeStyle>
                         Cycling
                     </NavLink>
-{/* 
-                    <NavLink exact to="/media"
+
+                    {/* <NavLink exact to="/media"
                         activeStyle>
                         Media
                     </NavLink> */}

@@ -2,7 +2,6 @@ import React from 'react'
 import '../Styling/main.css';
 import AnimateWriting from './AnimateWriting';
 import ProfileImage from '../Assets/profile-image-web.png';
-import {Link} from 'react-router-dom';
 
 function Homepage() {
 
@@ -13,8 +12,15 @@ function Homepage() {
     <div className='main-view'>
       <div className='left-side'>
         <AnimateWriting writingSequence={writingSequence}/>
+        <div className='buttons-flex'>
         <div className='contact-button-box'>
-          <Link to='/contact' className='contact-button-link'>Contact</Link>
+          <a className='contact-button-link' href="https://github.com/HelenLangers"><i class="devicon-github-original contact"></i>
+          <p className='skill-name'>Visit GitHub</p></a>
+        </div>
+        <div className='contact-button-box'>
+          <a className='contact-button-link' href="mailto:langridge.helen@outlook.com"><i class="fa-solid fa-envelope contact"></i>
+          <p className='skill-name'>Email Me</p></a>
+        </div>
         </div>
         <div className='language-boxes'>
           <div className='skill'>
