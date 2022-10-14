@@ -11,6 +11,7 @@ import LEJOGBlog from "./Components/LEJOGBlog";
 import Hamburger from "./Components/NavBar/Hamburger/Hamburger";
 import Footer from "./Components/Footer";
 import './Styling/index.css'
+import Contact from "./Components/Contact";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path='/cycling/round-the-world' element={<RTWBlog/>}/>
         <Route path='/cycling/LEJOG' element={<LEJOGBlog/>}/>
         <Route path='/media' element={<Media/>}/>
+        <Route path='/contact' element={<Contact />}/>
       </Routes>
       {/* <Footer/> */}
     </div>
