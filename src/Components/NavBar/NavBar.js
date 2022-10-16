@@ -23,10 +23,10 @@ function NavBar({toggle}) {
                         Projects
                     </NavLink>
 
-                    <NavLink exact to="/cycling"
+                    {/* <NavLink exact to="/cycling"
                         activeStyle>
                         Cycling
-                    </NavLink>
+                    </NavLink> */}
 
                     {/* <NavLink exact to="/media"
                         activeStyle>
