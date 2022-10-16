@@ -11,6 +11,16 @@
     margin-left: -3rem;
 }
 
+.route {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.route-image {
+    max-width: 100%;
+    height: auto;
+}
+
 .accordion {
     margin-top: 3rem;
     border: 1px solid rgba(0, 0, 0, 0.1);

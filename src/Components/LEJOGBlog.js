@@ -8,6 +8,7 @@ import {
 } from 'react-accessible-accordion';
 import '../Styling/blogs.css';
 import AnimateWriting from './AnimateWriting';
+import LEJOGRoute from '../Assets/LEJOGRoute.png'
 
 function LEJOGBlog () {
 
@@ -18,6 +19,9 @@ function LEJOGBlog () {
     <div className='main-container'>
       <div className='title'>
         <AnimateWriting writingSequence={writingSequence}/>
+      </div>
+      <div className='route'>
+        <img className='route-image' src={LEJOGRoute} alt="LEJOG Route"/>
       </div>
       <Accordion allowZeroExpanded>
         <AccordionItem>
