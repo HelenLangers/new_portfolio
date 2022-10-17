@@ -30,14 +30,10 @@ export const NavLink = styled(Link)`
 `
 
 export const Image = styled.img`
+    width: 16rem;
     margin-top: 2rem;
     z-index: 100;
-    max-width: 100%;
-    height: auto;
-
-    @media screen and (max-width: 768px) {
-        width: 200px;
-    }
+    filter: brightness(0) invert(1);
 `
 
 export const Bars = styled(FaBars)`
