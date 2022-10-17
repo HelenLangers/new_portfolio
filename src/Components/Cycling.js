@@ -7,7 +7,7 @@ import LEJOG from '../Assets/LEJOG.jpg';
 function Cycling() {
 
   const writingSequence = [
-    'I love cycling', 1000]
+    'Cycling Adventures', 1000]
 
   return (
     <div className='main-div-cycling'>
