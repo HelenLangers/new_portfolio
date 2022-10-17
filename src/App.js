@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import { Routes, Route} from 'react-router-dom';
