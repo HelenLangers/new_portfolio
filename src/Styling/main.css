@@ -30,7 +30,6 @@
 
 .buttons-flex {
     display: flex;
-
 }
 
 .contact-button-box {
@@ -199,6 +198,8 @@
 
     .skill {
         margin-bottom: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .right-side{
@@ -220,6 +221,19 @@
 
     .timeline {
         margin-left: -5%;
+    }
+
+    .profile-image{
+        margin-right: 0;
+    }
+
+    .code-clan-about {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .contact-button-box {
+        margin-left: 0;
     }
 }
 
