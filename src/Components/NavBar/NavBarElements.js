@@ -31,9 +31,16 @@ export const NavLink = styled(Link)`
 
 export const Image = styled.img`
     width: 16rem;
+    max-width: 100%;
+    height: auto;
     margin-top: 2rem;
     z-index: 100;
     filter: brightness(0) invert(1);
+
+    @media screen and (max-width: 768px) {
+        width: 12rem;
+        margin-top: 0;
+    }
 `
 
 export const Bars = styled(FaBars)`
