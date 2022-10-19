@@ -34,6 +34,11 @@ export const Image = styled.img`
     margin-top: 2rem;
     z-index: 100;
     filter: brightness(0) invert(1);
+
+    @media screen and (max-width: 768px) {
+        width: 10rem;
+        margin-top: 0;
+    }
 `
 
 export const Bars = styled(FaBars)`
@@ -47,7 +52,6 @@ export const Bars = styled(FaBars)`
         right: 0;
         transform: translate(-100%, 75%);
         font-size: 1.8rem;
-        cursor: pointer;
     }
 `
 

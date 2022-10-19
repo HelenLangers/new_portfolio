@@ -142,7 +142,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
     border-radius: 48px;
-    width: 20vw;
+    width: 25vw;
     padding: 1rem;
     border: rgb(75, 74, 74);
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
@@ -180,17 +180,20 @@
     }
 
     .animated-writing{
-        margin-left: 0;
+        font-size: 3rem;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
         text-align: center;
         margin-bottom: 1rem;
     }
 
-    .contact-button-box {
+    .cycling-button-box {
         margin-left: 0;
         margin-bottom: 2rem;
     }
 
     .language-boxes {
+        margin-top: 2rem;
         margin-left: 0;
         justify-content: center;
         width: 80%;
@@ -234,6 +237,10 @@
 
     .contact-button-box {
         margin-left: 0;
+    }
+
+    .cycling-link {
+        margin: 1rem;
     }
 }
 

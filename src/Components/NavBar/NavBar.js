@@ -1,5 +1,5 @@
 import React from 'react'
-import HelenLogo from './HelenLogoResized.png';
+import HelenLogo from './HelenLogo.png';
 import {Nav, NavLink, Bars, NavMenu, Image, WaveSVG } from './NavBarElements';
 
 function NavBar({toggle}) {
