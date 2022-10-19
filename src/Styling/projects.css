@@ -138,4 +138,12 @@
         padding-left: 0;
     }
 
+    .button-link {
+        margin: 0;
+    }
+
+    .flex {
+        padding: 0;
+    }
+
 }

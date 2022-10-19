@@ -30,6 +30,7 @@
 
 .buttons-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-button-box {
@@ -172,6 +173,7 @@
 
 .list {
     columns: 2;
+    column-gap: 3rem;
     -webkit-columns: 2;
     -moz-columns: 2;
 }
@@ -218,10 +220,15 @@ li {
     .cycling-button-box {
         margin-left: 0;
         margin-bottom: 2rem;
+        width: 50%;
+    }
+
+    .buttons-flex {
+        justify-content: center;
     }
 
     .language-boxes {
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-left: 0;
         justify-content: center;
         width: 80%;
@@ -265,10 +272,28 @@ li {
     }
 
     .contact-button-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #A6432C;
+        font-size: 0.5rem;
+        line-height: 1rem;
+        border-radius: 30px;
+        width: 60px;
+        padding: 0.5rem;
+        border: rgb(75, 74, 74);
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+        border-width: 2px;
+        transform: translateY(var(--translate-y, 0));
         margin-left: 0;
+        margin-bottom: 1rem;
     }
 
     .cycling-link {
         margin: 1rem;
+    }
+
+    .list {
+        column-gap: 2rem;
     }
 }
