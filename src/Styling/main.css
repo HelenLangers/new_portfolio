@@ -146,10 +146,10 @@
     justify-content: center;
     background: #A6432C;
     font-size: 1rem;
-    line-height: 1.5rem;
+    height: fit-content;
     border-radius: 48px;
     width: 15vw;
-    padding: 1rem;
+    padding: 0 1rem;
     border: rgb(75, 74, 74);
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
     border-width: 2px;

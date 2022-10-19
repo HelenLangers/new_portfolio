@@ -90,9 +90,8 @@
     justify-content: center;
     background: #A6432C;
     font-size: 1rem;
-    line-height: 2.5rem;
+    height: 2.5rem;
     border-radius: 48px;
-    width: fit-content;
     margin: 1rem;
     padding: 0 1rem;
     border: rgb(75, 74, 74);
