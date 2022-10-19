@@ -13,3 +13,8 @@ body {
 body {
   padding-bottom: 1.5rem;
 }
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
