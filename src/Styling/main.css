@@ -99,6 +99,7 @@
 
 .skill-name {
     margin: 5px;
+    text-align: center;
 }
 
 .right-side {
@@ -160,9 +161,13 @@
     text-align: center;
 }
 
+.cycling-button-box:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
 .list-container {
     margin-bottom: 2rem;
-    ;
 }
 
 .list {

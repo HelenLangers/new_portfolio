@@ -16,6 +16,7 @@ export const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-size: 1.5rem;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
@@ -23,6 +24,10 @@ export const NavLink = styled(Link)`
     margin-left: 1rem;
     margin-right: 2rem;
     z-index: 100;
+
+    &:hover {
+        color: #395C36;
+    }
 
     &.active {
         color: #F2D4AE;
@@ -69,6 +74,5 @@ export const WaveSVG = styled.svg`
     position: relative;
     display: block;
     width: 100%;
-    ${'' /* margin-top: -100px; */}
 `
 

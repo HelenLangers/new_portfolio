@@ -56,6 +56,10 @@ function Homepage() {
             <p className='skill-name'>React</p>
           </div>
           <div className='skill'>
+            <i class="devicon-nodejs-plain lang"></i>
+            <p className='skill-name'>Node.JS</p>
+          </div>
+          <div className='skill'>
             <i className="devicon-mongodb-plain lang"></i>
             <p className='skill-name'>MongoDB</p>
           </div>
