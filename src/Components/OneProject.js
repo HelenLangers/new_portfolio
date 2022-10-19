@@ -18,8 +18,13 @@ function OneProject({project}) {
                 </div>
             </div>
             <p className='summary'>{project.summary}</p>
+            <div className="flex">
             <div className='button-box'>
             <a className='button-link' href={project.github} target="_blank" rel="noopener noreferrer">See it on Github</a>
+            </div>
+            <div className='button-box'>
+            <a className='button-link' href={project.live} target="_blank" rel="noopener noreferrer">See it live</a>
+            </div>
             </div>
         </div>
     </div>

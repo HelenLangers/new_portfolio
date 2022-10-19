@@ -34,7 +34,7 @@ function App() {
         <Route path='/cycling/LEJOG' element={<LEJOGBlog/>}/>
         <Route path='/media' element={<Media/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

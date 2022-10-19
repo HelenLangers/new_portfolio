@@ -15,11 +15,15 @@ function Homepage() {
         <div className='buttons-flex'>
         <div className='contact-button-box'>
           <a className='contact-button-link' href="https://github.com/HelenLangers" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original contact"></i>
-          <p className='skill-name'>Visit GitHub</p></a>
+          <p className='skill-name'>GitHub</p></a>
         </div>
         <div className='contact-button-box'>
           <a className='contact-button-link' href="mailto:langridge.helen@outlook.com"><i class="fa-solid fa-envelope contact"></i>
-          <p className='skill-name'>Email Me</p></a>
+          <p className='skill-name'>Email</p></a>
+        </div>
+        <div className='contact-button-box'>
+          <a className='contact-button-link' href="https://drive.google.com/file/d/1l1Os5lSfq7MkgV5bGX07tqbCvecJ8st_/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file contact"></i>
+          <p className='skill-name'>CV</p></a>
         </div>
         </div>
         <div className='language-boxes'>
