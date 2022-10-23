@@ -137,12 +137,20 @@
         padding-left: 0;
     }
 
+    .button-box{
+        margin: 0.5rem;
+        height: 3rem;
+    }
+
     .button-link {
         margin: 0;
+        text-align: center;
     }
 
     .flex {
         padding: 0;
+        width: 100%;
+        justify-content: space-around;
     }
 
 }
