@@ -3,6 +3,8 @@ import '../Styling/projects.css';
 
 function OneProject({project}) {
 
+const isLive = (project.live !== null)
+
   return (
     <div className='project-block'>
         <div className='image-half'>
@@ -22,9 +24,9 @@ function OneProject({project}) {
                 <div className='button-box'>
                 <a className='button-link' href={project.github} target="_blank" rel="noopener noreferrer">See it on Github</a>
                 </div>
-                <div className='button-box'>
-                <a className='button-link' href={project.live} target="_blank" rel="noopener noreferrer">See it live</a>
-                </div>
+                {isLive && <div className='button-box'>
+                    <a className='button-link' href={project.live} target="_blank" rel="noopener noreferrer">See it live</a>
+                </div>}
             </div>
         </div>
     </div>
