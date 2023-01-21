@@ -1,51 +1,54 @@
-import React from 'react'
-import HelenLogo from './HelenLogo.png';
-import {Nav, NavLink, Bars, NavMenu, Image, WaveSVG } from './NavBarElements';
+import React, {useState} from 'react'
+import {Link, NavLink} from 'react-router-dom';
+import { FaBars, FaTimes, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { navItems } from './NavItems'
+import './NavBar.css'
+import Logo from '../../Assets/Images/HelenLogo.png'
 
-function NavBar({toggle}) {
-    return (
-        <>
-            <Nav>
-                <NavLink exact to='/'>
-                    <Image src={HelenLogo}/>
-                </NavLink>
+const NavBar = () => {
 
-                <Bars onClick={toggle}/>
+    const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)
 
-                <NavMenu>
-                    <NavLink exact to="/about"
-                        activeStyle>
-                        About Me
+    const closeMobileMenu = () => setHamburgerMenuOpen(false)
+
+    const handleClick = () => setHamburgerMenuOpen(!hamburgerMenuOpen)
+
+
+  return (
+    <header>
+    <nav className='navbar'>
+        <div className='navbar-container'>
+            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                <div className='logo-container'>
+                    <img src={Logo} className='logo-image' alt="logo"/>
+                </div>
+            </Link>
+            <div className='menu-icon' onClick={handleClick}>
+                {hamburgerMenuOpen ? <FaTimes/> : <FaBars />}
+            </div>
+
+            <ul className={hamburgerMenuOpen ? "nav-menu active" : "nav-menu"}>
+            {navItems.map((item) => {
+                return (
+                <li key={item.id} className={item.className}>
+                    <NavLink to={item.path} className={({ isActive}) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        {item.title}
                     </NavLink>
+                </li>
+                )
+            })}
 
-                    <NavLink exact to="/projects"
-                        activeStyle>
-                        Projects
-                    </NavLink>
-
-                    {/* <NavLink exact to="/cycling"
-                        activeStyle>
-                        Cycling
-                    </NavLink> */}
-
-                    {/* <NavLink exact to="/media"
-                        activeStyle>
-                        Media
-                    </NavLink> */}
-                </NavMenu>
-            </Nav>
-
-        <div>
-            <WaveSVG data-name="Layer1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1340 200"
-                preserveAspectRatio="none"
-                >
-            <path fill="#7B5C6E" fillOpacity="1" d="M0,128L1440,64L1440,0L0,0Z"></path></WaveSVG>
+            <li><a className='social-icon' href="https://github.com/HelenLangers"><FaGithub/></a>
+            </li>
+            <li><a className='social-icon' href="https://www.linkedin.com/in/helen-langridge-62b32b166/"><FaLinkedin/></a>
+            </li>
+            <li><a className='social-icon' href="https://www.instagram.com/helen.langridge/"><FaInstagram/></a>
+            </li>
+            </ul>
         </div>
-        </>
+    </nav>
+    </header>
     )
 }
 
 export default NavBar
-

@@ -1,0 +1,12 @@
+.animated-writing{
+    font-size: 3.5rem;
+    color: var(--primary-dark);
+    height: fit-content;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .animated-writing{
+        font-size: 3rem;
+    }
+}

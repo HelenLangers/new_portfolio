@@ -1,0 +1,150 @@
+.navbar {
+    display: flex;
+    background-color: var(--primary);
+    border-bottom: 3px solid var(--secondary);
+    height: 16vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 16vh;
+    width: 100%;
+    margin: 0 5rem;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 20rem;
+}
+
+.logo-image {
+    width: 100%;
+    filter: invert(100%);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-links {
+    color: var(--primary-light);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.75rem;
+    display: block;
+}
+
+.nav-links:hover {
+    border-bottom: 1px solid var(--primary-dark);
+    color: var(--primary-dark);
+}
+
+.activated {
+    border-bottom: 1px solid var(--secondary);
+}
+
+.social-icon {
+    font-size: 1.75rem;
+    display: flex;
+    color: var(--primary-light);
+    padding: 1rem 1rem;
+}
+
+.social-icon:hover {
+    color: var(--primary-dark);
+}
+
+.menu-icon {
+    color: #000;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        height: 14vh;
+    }
+
+    .navbar-container{
+        padding: 0 3rem;
+        margin-left: 0;
+    }
+
+    .logo-container{
+        width: 15rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 14vh;
+        left: -100%;
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        border-bottom: 3px solid var(--secondary);
+        }
+
+    .nav-menu.active {
+        background: var(--primary);
+        left: 0;
+        opacity: 1;
+        transition: all 0.6s ease;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        }
+
+    
+    .nav-item {
+        height: 10vh;
+        }
+    
+    .nav-links {
+    width: 100%;
+    }
+
+    .social-icon{
+        margin: 1rem;
+    }
+}

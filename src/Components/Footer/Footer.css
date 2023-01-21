@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary);
+    border-top: 3px solid var(--secondary);
+    padding: 1rem;
+    color: var(--primary-light);
+    margin-top: auto;
+    bottom: 0;
+}
+
+.social-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: fit-content;
+}
+
