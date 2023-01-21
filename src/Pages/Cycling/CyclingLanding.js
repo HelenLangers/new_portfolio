@@ -18,7 +18,7 @@ const CyclingLanding = () => {
       <NavBar/>
 
       <section className='cycling-page-body'>
-        <div className='title-section'>
+        <div className='title-section-cycling'>
           <AnimateWriting writingSequence={writingSequence}/>
         </div>
 

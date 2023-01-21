@@ -8,7 +8,7 @@
     padding-top: 16vh;
 }
 
-.title-section{
+.title-section-cycling{
     margin-top: 5rem;
 }
 
@@ -96,4 +96,25 @@
     align-items: center;
     justify-content: center;
     margin: 3rem 0
+}
+
+@media (max-width: 992px) {
+    .title-section-cycling{
+        height: 8rem;
+        margin-top: 2rem;
+    }
+
+    .cycling-intro{
+        margin: 1rem 2rem;
+    }
+
+    .adventure-block{
+        margin-bottom: 2rem;
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .adventure-image{
+        max-width: 100%;
+    }
 }
