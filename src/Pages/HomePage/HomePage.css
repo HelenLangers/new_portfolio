@@ -81,7 +81,7 @@
 
 @media (max-width: 992px) {
     .home-page-body{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .left-side,
@@ -89,6 +89,10 @@
         width: 100%;
         margin: 0;
         padding: 0.5rem;
+    }
+
+    .writing-container{
+        height: 8rem;
     }
 
     .contact-container{

@@ -18,7 +18,9 @@ const HomePage = () => {
       <section className='home-page-body'>
         <div className='left-side'>
 
-          <AnimateWriting writingSequence={homepageWriting}/>
+        <div className='writing-container'>
+            <AnimateWriting writingSequence={homepageWriting}/>
+          </div>
 
           <div className='contact-container'>
             <div className='contact-box'>
