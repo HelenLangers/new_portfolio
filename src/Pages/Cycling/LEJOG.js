@@ -18,7 +18,7 @@ const LEJOG = () => {
         </div>
 
       <div className='hero-image-container'>
-        <img src={lejogmap} className='cycling-hero-image'/>
+        <img src={lejogmap} className='cycling-hero-image' alt="lands end to john o'groats map"/>
       </div>
 
       <div className='accordian-section'>

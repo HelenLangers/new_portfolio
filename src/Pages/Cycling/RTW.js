@@ -18,7 +18,7 @@ const RTW = () => {
       </div>
 
     <div className='hero-image-container'>
-      <img src={worldmap} className='cycling-hero-image'/>
+      <img src={worldmap} className='cycling-hero-image' alt="cycle around the world map"/>
     </div>
 
     <div className='accordian-section'>
