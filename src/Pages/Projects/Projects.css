@@ -7,6 +7,12 @@
     padding-top: 16vh;
 }
 
-.title-section{
+.title-section-projects{
     margin-top: 5rem;
+}
+
+@media (max-width: 992px) {
+    .title-section-projects{
+        margin-top: 3rem;
+    }
 }

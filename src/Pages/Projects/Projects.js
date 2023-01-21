@@ -17,7 +17,7 @@ const Projects = () => {
             <NavBar/>
 
             <section className="projects-page-body">
-                <div className='title-section'>
+                <div className='title-section-project'>
                     <AnimateWriting writingSequence={writingSequence}/>  
                 </div>
 

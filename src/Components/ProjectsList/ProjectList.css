@@ -29,9 +29,7 @@
 .screenshot {
     max-width: 100%;
     height: auto;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--primary-dark);
+    border: 3px solid var(--primary-dark);
     border-radius: 26px;
 }
 
@@ -59,7 +57,6 @@
 .one-lang {
     margin: 5px;
     width: 3rem;
-
 }
 
 .summary {
@@ -76,9 +73,8 @@
     border-radius: 26px;
     margin: 1rem;
     padding: 0 1rem;
-    border: var(--primary-dark);
+    border: 2px solid var(--primary-dark);
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
-    border-width: 2px;
     transform: translateY(var(--translate-y,0));
 }
 
@@ -91,4 +87,25 @@
     text-decoration: none;
     margin: 0 1rem;
     color: #fff;
+}
+
+@media (max-width: 992px) {
+    .project-block {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .image-half {
+        width: 100%;
+    }
+
+    .text-half {
+        width: 100%;
+    }
+
+    .summary {
+        padding: 1rem 0;
+    }
 }
