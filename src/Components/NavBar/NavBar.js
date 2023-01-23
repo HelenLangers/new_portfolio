@@ -20,7 +20,7 @@ const NavBar = () => {
         <div className='navbar-container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                 <div className='logo-container'>
-                    <img src={Logo} className='logo-image' alt="logo"/>
+                    <img src={Logo} className='logo-image' alt="Helen Langridge Logo"/>
                 </div>
             </Link>
             <div className='menu-icon' onClick={handleClick}>

@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <>
       <NavBar/>
-      <section className='home-page-body'>
+      <article className='home-page-body'>
         <div className='left-side'>
 
         <div className='writing-container'>
@@ -49,7 +49,7 @@ const HomePage = () => {
         <div className='right-side'>
           <img src={Image} alt="Helen Langridge" className='hero-image'/>
         </div>
-      </section>
+      </article>
 
       <Footer/>
     </>
